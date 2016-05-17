@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="39cec7a4-d4f3-4ff8-95ae-7be3a1612d98" name="comment_boards" url="http://localhost">
+        <fileTransfer host="localhost" port="2222" privateKey="C:\Users\w\RubymineProjects\comment_boards\.vagrant\machines\default\virtualbox\private_key" accessType="SFTP" username="ubuntu" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="2222" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

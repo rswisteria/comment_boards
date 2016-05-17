@@ -79,5 +79,19 @@ Vagrant.configure(2) do |config|
     su - ubuntu -c 'echo \'export PATH="$HOME/.rbenv/bin:$PATH"\' >> ~/.bash_profile'
     su - ubuntu -c 'echo \'eval "$(rbenv init -)"\' >> ~/.bash_profile'
     su - ubuntu -c 'rbenv install 2.3.1'
+
+    # ExecJS runtime install (nodejs)
+    apt-get install nodejs
+
+    # mysql install
+    dpkg-reconfigure -f noninteractive
+    echo "mysql-server mysql-server/root_password password password" | sudo debconf-set-selections
+    echo "mysql-server mysql-server/root_password_again password password" | sudo debconf-set-selections
+    apt-get -y install mysql-server libmysqlclient-dev
+
+    # redis install
+    apt-get -y install redis-server
+
+
   SHELL
 end
