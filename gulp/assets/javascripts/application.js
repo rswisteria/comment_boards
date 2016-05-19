@@ -1,5 +1,4 @@
 import $ from 'jquery';
-alert('jQuery version: ' + $.fn.jquery);
 
 class Hoge {
     construncor() {

@@ -7,6 +7,9 @@
           <mappings>
             <mapping deploy="/vagrant_data" local="$PROJECT_DIR$" web="/" />
           </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/node_modules" />
+          </excludedPaths>
         </serverdata>
       </paths>
     </serverData>

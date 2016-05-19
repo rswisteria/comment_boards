@@ -14,8 +14,7 @@ gulp.task('compile-sass', function() {
         .pipe(rev())
         .pipe(gulp.dest(config.stylesheet.dest))
         .pipe(rev.manifest(config.rev.dest, config.rev.opts))
-        .pipe(gulp.dest(config.publicAssets))
-        .pipe(notify('finish compile-sass'));
+        .pipe(gulp.dest(config.publicAssets));
 });
 
 gulp.task('compile-scss', function() {
@@ -26,6 +25,5 @@ gulp.task('compile-scss', function() {
         .pipe(rev())
         .pipe(gulp.dest(config.stylesheet.dest))
         .pipe(rev.manifest(config.rev.dest, config.rev.opts))
-        .pipe(gulp.dest(config.publicAssets))
-        .pipe(notify('finish compile-scss'));
+        .pipe(gulp.dest(config.publicAssets));
 });
