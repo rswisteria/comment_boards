@@ -8,7 +8,6 @@ var uglify = require('gulp-uglify');
 gulp.task('webpack', function() {
     return gulp.src(config.javascript.src)
         .pipe(webpack(webpackConfig))
-        .pipe(uglify())
         .pipe(rev())
         .pipe(gulp.dest(webpackConfig.output.publicPath))
         .pipe(rev.manifest(config.rev.dest, config.rev.opts))
