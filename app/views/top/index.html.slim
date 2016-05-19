@@ -1,0 +1,8 @@
+h1 Top#index
+p Find me in app/views/top/index.html.slim
+
+- content_for :head
+  = stylesheet_link_tag gulp_asset_path('application.bundle.css')
+
+- content_for :foot
+  = javascript_include_tag gulp_asset_path('application.bundle.js')

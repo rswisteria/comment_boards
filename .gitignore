@@ -104,3 +104,6 @@ fabric.properties
 # *.iml
 # modules.xml
 
+### npm packages
+node_modules
+/public/assets
