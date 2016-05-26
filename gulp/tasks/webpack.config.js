@@ -13,8 +13,8 @@ module.exports = {
     },
     module: {
         loaders: [
-            { test: /\.js?$/, loader: 'babel?presets[]=es2015'},
-            { test: /\.jsx?$/, loader: 'jsx-loader?harmony' }
+            { test: /\.js?$/, loader: 'babel?presets[]=es2015' },
+            { test: /\.jsx?$/, loader: 'babel?presets[]=es2015&presets[]=react' }
         ]
     }
 };

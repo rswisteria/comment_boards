@@ -1,11 +1,7 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
+import React from 'react'
+import ReactDOM from 'react-dom'
 
 class CommentBox extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return(
             <div className="commentBox">
@@ -44,25 +40,17 @@ class CommentForm extends React.Component {
 }
 
 class CommentList extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
-        return(
-            <div className="commentForm">
+        return (
+            <div className="commentList">
             </div>
         )
     }
 }
 
 class Comment extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
-        return(
+        return (
             <article className="comment">
                 <h3 className="commentAuthor">{this.props.author}</h3>
                 {this.props.children}

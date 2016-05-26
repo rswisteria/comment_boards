@@ -40,7 +40,7 @@ Vagrant.configure(2) do |config|
   config.vm.synced_folder ".", "/vagrant_data",
                           mount_options: ["dmode=777", "fmode=777"],
                           type: 'rsync',
-                          rsync__exclude: %w(.git vendor/bundle)
+                          rsync__exclude: %w(.git vendor/bundle node_modules)
 
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
