@@ -1,12 +1,12 @@
-var config = require('./config');
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var rename = require('gulp-rename');
-var rev = require('gulp-rev');
-var minifyCss = require('gulp-minify-css');
-var notify = require('gulp-notify');
+import config    from './config'
+import gulp      from 'gulp'
+import sass      from 'gulp-sass'
+import rename    from 'gulp-rename'
+import rev       from 'gulp-rev'
+import minifyCss from 'gulp-minify-css'
+// import notify    from 'gulp-notify'
 
-gulp.task('compile-sass', function() {
+gulp.task('compile-sass', () => {
     return gulp.src(config.stylesheet.srcSass)
         .pipe(sass({ indentedSyntax: true, errLogToConsole: true }))
         .pipe(minifyCss())
@@ -17,7 +17,7 @@ gulp.task('compile-sass', function() {
         .pipe(gulp.dest(config.publicAssets));
 });
 
-gulp.task('compile-scss', function() {
+gulp.task('compile-scss', () => {
     return gulp.src(config.stylesheet.srcScss)
         .pipe(sass({ indentedSyntax: true, errLogToConsole: true }))
         .pipe(minifyCss())

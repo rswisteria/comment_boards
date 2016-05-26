@@ -1,4 +1,4 @@
-var config = require('./config');
+import config from './config'
 
 module.exports = {
     entry: {

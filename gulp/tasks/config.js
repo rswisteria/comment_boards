@@ -1,5 +1,5 @@
-gulpAssets = 'gulp/assets';
-publicAssets = 'public/assets';
+const gulpAssets = 'gulp/assets';
+const publicAssets = 'public/assets';
 
 module.exports = {
     gulpAssets: gulpAssets,

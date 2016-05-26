@@ -44,5 +44,8 @@
   "dependencies": {
     "jquery": "^2.2.3",
     "react-bootstrap": "^0.29.4"
+  },
+  "babel": {
+    "presets": ["es2015"]
   }
 }

@@ -1,6 +1,7 @@
-var config = require('./config');
-var gulp = require('gulp');
-var browserSync = require('browser-sync').create();
+import config from './config'
+import gulp   from 'gulp';
+
+const browserSync = require('browser-sync').create();
 
 gulp.task('watch', function() {
     gulp.watch(config.watch.stylesheetSass, ['compile-sass']);

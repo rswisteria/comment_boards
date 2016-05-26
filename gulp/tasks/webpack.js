@@ -1,9 +1,9 @@
-var config = require('./config');
-var gulp = require('gulp');
-var webpack = require('gulp-webpack');
-var webpackConfig = require('./webpack.config.js');
-var rev = require('gulp-rev');
-var uglify = require('gulp-uglify');
+import config        from './config'
+import gulp          from 'gulp'
+import webpack       from 'gulp-webpack'
+import webpackConfig from './webpack.config.js'
+import rev           from 'gulp-rev'
+// import uglify        from 'gulp-uglify'
 
 gulp.task('webpack', function() {
     return gulp.src(config.javascript.src)

@@ -1,7 +1,7 @@
-var gulp = require('gulp');
-var runSequence = require('run-sequence');
+import gulp        from 'gulp'
+import runSequence from 'run-sequence'
 
-gulp.task('default', function() {
+gulp.task('default', () => {
     runSequence(
         'clean',
         ['compile-sass', 'compile-scss'],
